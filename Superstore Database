@@ -1,4 +1,4 @@
-#this superstore prject includes the following date:
+# this superstore prject includes the following date:
 
 CREATE TABLE superstore (
     item_id INTEGER PRIMARY KEY,
@@ -27,17 +27,17 @@ VALUES
     (14, 'Cutlery Set', 'Kitchen Supplies', 34.50, 40, 4.4),
     (15, 'Cozy Throw Blanket', 'Furnishings', 24.99, 100, 4.2);
 
-#for this project, i used these queries to get information on the items and their prices.
+# for this project, i used these queries to get information on the items and their prices.
 
-#1. Write a SQL query that orders the items by price
+# 1. Write a SQL query that orders the items by price
 SELECT item_name, price
 FROM superstore
 ORDER BY price ASC ; 
 
-#2. write a query that shows a statistic about item prices
+# 2. write a query that shows a statistic about item prices
 SELECT SUM(price)
 FROM superstore ;
 
-#3. show a statistic on the prices in the category called "kitchen supplies"
+# 3. show a statistic on the prices in the category called "kitchen supplies"
 SELECT AVG(category='Kitchen Supplies')
 FROM superstore ;
